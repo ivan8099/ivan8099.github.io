@@ -1,0 +1,73 @@
+<html>
+<head>
+   <title>Hello World</title>
+   <link href="styles/style.css" rel="stylesheet">
+   <style>
+	p {
+		color: red;
+	}
+	</style>
+	<script>
+		// let x = "Autorun Hello world"
+		// alert(x);
+		function showName() {
+			// get the name input element value
+			var name = document.getElementById("nameInput").value;
+
+			// Displaying the name value
+			alert(name);
+		}
+		function calculateFactorial(){
+			var number = document.getElementById("factorialInput").value;
+
+			let factorial = 1;
+
+			for(let i = 1; i <= number; i++) {
+				factorial *= i;
+			}
+            alert(factorial);
+		}
+	</script>
+</head>
+<body>
+<div>
+	<input type="text" placeholder="Type your name..." id="nameInput">
+	<button type="button" onclick="showName();">Show My Name</button>
+	<p>My cat is <strong>very</strong> grumpy.</p>
+	<p>My cat is <strong>very grumpy.</p></strong>
+	<h1>My main title</h1>
+	<img src="images/firefox-icon.png" alt="My test image" width="10%">
+</div>
+<div>
+	<input type="number" placeholder="Type a number to calculate factorial..." id="factorialInput">
+	<button type="button" onclick="calculateFactorial();">Show Factorial</button>
+</div>
+<div>
+	<!-- 4 heading levels: -->
+	<h1>My main title</h1>
+	<h2>My top level heading</h2>
+	<h3>My subheading</h3>
+	<h4>My sub-subheading</h4>
+</div>
+<div>
+<p>At Mozilla, we’re a global community of</p>
+<ul>
+  <li>technologists</li>
+  <li>thinkers</li>
+  <li>builders</li>
+</ul>
+<ol>
+  <li>technologists</li>
+  <li>thinkers</li>
+  <li>builders</li>
+  <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a>
+</ol>
+<p>working together ... </p>
+<pre>Defines a piece of computer code At Mozilla, we’re a global community of
+technologists
+thinkers
+builders.
+</pre>
+<div>
+</body>
+</html>
